@@ -1,9 +1,5 @@
-//Write a program to check whether a number is divisible by 5 and 11 or not//
-
-
-
 import java.util.*;
-
+//Write a program to check whether a number is even or odd.
 class Main {
 
     // Non-static result method
@@ -14,6 +10,16 @@ class Main {
             System.out.println("The number is not divisible : " + a);
         }
     }
+    
+    void evenOrOdd(int a) {
+        if (a%2==0) {
+            System.out.println("The number is Even " + a);
+        }  else {
+            System.out.println("The number is Odd  " + a);
+        }
+    }
+    
+    
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
@@ -23,6 +29,9 @@ class Main {
         
         // Create an instance of Main class to call the non-static result method
         Main re = new Main();
-        re.divisible(a); // Call the method using the instance
+        ///re.divisible(a); // Call the method using the instance
+        re.evenOrOdd(a);
+        
+        
     }
 }
