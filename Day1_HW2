@@ -1,0 +1,28 @@
+//Write a program to check whether a number is divisible by 5 and 11 or not//
+
+
+
+import java.util.*;
+
+class Main {
+
+    // Non-static result method
+    void divisible(int a) {
+        if (a%5==0 && a%11==0) {
+            System.out.println("The number is divisible by 5 & 11 : " + a);
+        }  else {
+            System.out.println("The number is not divisible : " + a);
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        
+        System.out.print("Enter a number: ");
+        int a = in.nextInt();
+        
+        // Create an instance of Main class to call the non-static result method
+        Main re = new Main();
+        re.divisible(a); // Call the method using the instance
+    }
+}
