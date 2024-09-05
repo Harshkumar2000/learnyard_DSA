@@ -1,0 +1,26 @@
+import java.util.*;
+
+class Main {
+
+    // Non-static result method
+    void result(int a) {
+        if (a > 0) {
+            System.out.println("The number is positive: " + a);
+        } else if (a < 0) {
+            System.out.println("The number is negative: " + a);
+        } else {
+            System.out.println("The number is Zero: " + a);
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        
+        System.out.print("Enter a number: ");
+        int a = in.nextInt();
+        
+        // Create an instance of Main class to call the non-static result method
+        Main re = new Main();
+        re.result(a); // Call the method using the instance
+    }
+}
